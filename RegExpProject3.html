@@ -1,0 +1,234 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>RegExpProject3</title>
+    <link rel="stylesheet" type="text/css" href="css/RegExpProject3.css">
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+</head>
+<body>
+
+    <!-- 头部 -->
+    <header>
+
+        <div class="header__wrap">
+
+            <!-- LOGO区域 -->
+            <div class="header__logo">
+                贰壹叁高铁客户服务中心&nbsp;|&nbsp;<span class="header__logo__client">客户服务</span>
+            </div>
+
+            <!-- 导航区域 -->
+            <nav class="header__nav">
+
+                <div class="header__nav-item">
+                    <span>意见反馈&nbsp;</span>
+                    <a>eryisan@com</a>
+                </div>
+
+                <div class="header__nav-item">
+                    您好,请&nbsp;<a>登录</a>&nbsp;|&nbsp;<a>注册</a>
+                </div>
+
+                <div class="header__nav-item imooc">
+                    <span>我的IMOOC</span>
+                    <div class="imooc__menu">
+                        <ul class="imooc__menu__list">
+                            <li><a>未完成订单</a><br/><a>已完成订单(改/退)</a></li>
+                            <li><a>我的保险</a></li>
+                            <li><a>查看个人信息</a><br/><a>账户安全</a></li>
+                            <li><a>常用联系人</a></li>
+                            <li><a>重点旅客预约</a><br/><a>遗失物品查找</a></li>
+                            <li><a>服务查询</a></li>
+                            <li><a>投诉</a><br/><a>建议</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="header__nav-item phone">
+                    <img src="img/未标题-1.png" class="phonePic">
+                    <span><a>手机版</a></span>
+                </div>
+
+            </nav>
+
+            <!-- <nav class="header__nav">
+                <ul class="header__nav-list">
+
+                    <li class="header__nav-list__item">
+                        <span>意见反馈&nbsp;</span>
+                        <a href="#" class="header__nav-list__item_orange">eryisan@com</a>
+                    </li>
+
+                    <li class="header__nav-list__item">
+                        您好,请&nbsp;
+                        <a href="#" class="header__nav-list__item_orange">登录</a>&nbsp;|&nbsp;<a href="#">注册</a>
+                    </li>
+
+                    <li class="header__nav-list__item header__nav-list__imooc">
+                        <span>我的IMOOC</span>
+                        <div class="header__nav-list__imooc__triangle"></div>
+                        <div class="header__nav-list__imooc__menu">
+                            <ul class="header__nav-list__imooc__menu__list">
+                                <li class="header__nav-list__imooc__menu__list__item">
+                                    <a href="#">未完成订单</a><br/>
+                                    <a href="#">已完成订单(改/退)</a>
+                                </li>
+                                <li class="header__nav-list__imooc__menu__list__item">
+                                    <a href="#">我的保险</a>
+                                </li>
+                                <li class="header__nav-list__imooc__menu__list__item">
+                                    <a href="#">查看个人信息</a><br/>
+                                    <a href="#">账户安全</a>
+                                </li>
+                                <li class="header__nav-list__imooc__menu__list__item">
+                                    <a href="#">常用联系人</a>
+                                </li>
+                                <li class="header__nav-list__imooc__menu__list__item">
+                                    <a href="#">重点旅客预约</a><br/>
+                                    <a href="#">遗失物品查找</a>
+                                </li>
+                                <li class="header__nav-list__imooc__menu__list__item">
+                                    <a href="#">服务查询</a>
+                                </li>
+                                <li class="header__nav-list__imooc__menu__list__item">
+                                    <a href="#">投诉</a><br/>
+                                    <a href="#">建议</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="header__nav-list__item header__nav-list__phone">
+                        <img src="img/未标题-1.png" class="header__nav-list__phone__pic">
+                        <span><a href="#">手机版</a></span>
+                    </li>
+
+                </ul>
+            </nav> -->
+        </div>
+
+    </header>
+
+    <!-- 主体区域 -->
+    <main>
+
+        <div class="main__wrap">
+
+            <div class="location">
+                您现在的位置：<span><a>客运首页</a>&nbsp;>&nbsp;<a>注册</a></span>
+            </div>
+
+            <div class="account">
+
+                <div class="account__title">账户信息</div>
+
+                <div class="account__item">
+                    <span>*</span>
+                    <label for="username">用户名</label>：
+                    <input type="text" id="username" placeholder="用户名设置成功后不可修改">
+                    <p class="itemTip">6-30位字母、数字或'_'，字母开头</p>
+                </div>
+
+                <div class="account__item">
+                    <span>*</span>
+                    <label for="pwd">登录密码</label>：
+                    <input type="password" id="pwd" placeholder="6-20位字母、数字或符号">
+                    <p class="itemTip itemTip_pwd"></p>
+                    <div class="degree">
+                        <span class="easy"></span>
+                        <span class="middle"></span>
+                        <span class="hard"></span>
+                    </div>
+                </div>
+
+                <div class="account__item">
+                    <span>*</span>
+                    <label for="agPwd">确认密码</label>：
+                    <input type="password" id="agPwd" placeholder="再次输入您的登录密码">
+                    <p class="itemTip"></p>
+                </div>
+
+                <div class="account__item">
+                    <span>*</span>
+                    <label for="fullname">姓名</label>：
+                    <input type="text" id="fullname" placeholder="请输入姓名">
+                    <p class="itemTip"><a class="nameRule">姓名填写规则</a></p>
+                    <div class="ruleInfo">
+                        1.确认姓名中生僻字无法输入时，可用生僻字拼音或同音字替代。<br>
+                        2.输入姓名保存后，遇有系统无法正确显示的汉字，可用该汉字的
+                        拼音或同音字重新修改后保存。<br>
+                        3.姓名中有繁体字无法输入时，可用简体替代。<br>
+                        4.姓名较长，汉字与英文字符合计超过30个（1个汉字算2个字符）
+                        的，需按姓名中第一个汉字或英文字符开始按顺序连续输入30个字符
+                        （空格字符不输入），其中英文字符输入时不区别大小写。<br>
+                    </div>
+                </div>
+
+                <div class="account__item">
+                    <span>*</span>
+                    <label for="cardType">证件类型</label>：
+                    <select id="cardType">
+                        <option>二代身份证</option>
+                        <option>港澳通行证</option>
+                        <option>台湾通行证</option>
+                    </select>
+                </div>
+
+                <div class="account__item">
+                    <span>*</span>
+                    <label for="idCard">证件号码</label>：
+                    <input type="text" id="idCard" placeholder="请输入您的证件号码">
+                    <p class="itemTip"></p>
+                </div>
+
+                <div class="account__item">
+                    <span>*</span>
+                    <label for="email">邮箱</label>：
+                    <input type="email" id="email" placeholder="请正确填写邮箱地址">
+                    <p class="itemTip"></p>
+                </div>
+
+                <div class="account__item">
+                    <span>*</span>
+                    <label for="telephone">手机号码</label>：
+                    <input type="tel" id="telephone" placeholder="请输入您的手机号码">
+                    <p class="itemTip">请正确填写手机号码,稍后将向该手机号码发送短信验证码</p>
+                </div>
+
+                <div class="account__item">
+                    <span>*</span>
+                    <label for="people">旅客类型</label>：
+                    <select id="people">
+                        <option>成人</option>
+                        <option>儿童</option>
+                        <option>学生</option>
+                    </select>
+                </div>
+
+                <div class="account__agreement">
+                    <input type="checkbox" id="choose">
+                    <label for="choose">我已阅读并同意遵守</label>
+                    <span><a>《中国铁路客户服务中心网站服务条款》</a></span>
+                </div>
+
+                <button class="account__next" id="nextBtn">下一步</button>
+
+            </div><!--account-->
+
+        </div>
+
+    </main>
+
+    <!-- 尾部区域 -->
+    <footer>
+
+            <p><a>关于我们</a>&nbsp;|&nbsp;<a>网站声明</a></p>
+            <p>Copyright © 2020 eryisan.com All Rights Reserved | 粤ICP备 20200602号-2</p>
+
+    </footer>
+
+    <script type="text/javascript" src="js/RegExpProject3.js"></script>
+
+</body>
+</html>

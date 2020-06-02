@@ -1,0 +1,431 @@
+
+header{
+    background-color: rgb(239, 239, 239);
+    border-bottom:2px solid rgb(36,135,201);
+}
+
+.header__wrap{
+    width:1250px;
+    height:110px;
+    margin:0 auto;
+    position:relative;
+}
+/* ----------------------------------------------------------------------------头部区域结束 */
+
+.header__logo{
+    width:500px;
+    height:110px;
+    line-height:110px;
+    text-indent:110px;
+    letter-spacing:2px;
+    font-size:23px;
+    color:black;
+    position:absolute;
+    top:50%;
+    margin-top:-55px;
+    left:0px;
+    background:url('../img/logo.png') left center no-repeat;
+    background-size:105px 105px;
+    cursor:pointer;
+}
+
+.header__logo__client{
+    font-size:18px;
+    color:rgb(102,102,102);
+}
+/* ----------------------------------------------------------------------------LOGO区域结束 */
+
+/* 导航区域 */
+.header__nav{
+    width:700px;
+    height:110px;
+    position:absolute;
+    top:50%;
+    margin-top:-55px;
+    right:0;
+    line-height: 110px;
+}
+
+.header__nav-item{
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.imooc{
+    position:relative;
+    cursor:pointer;
+}
+
+.imooc:hover{
+    color:rgb(251,116,3);
+}
+
+.imooc>span:after{
+    content:"";
+    border-left:10px solid transparent;
+    border-right:10px solid transparent;
+    border-top:13px solid rgb(251,116,3);
+    position:absolute;
+    top:34%;
+    right:-7px;
+    cursor:pointer;
+}
+
+.imooc__menu{
+    width:163px;
+    height:320px;
+    position:absolute;
+    left:0;
+    top:32px;
+    border:1.5px solid rgb(251,116,3);
+    background-color: rgb(247, 247, 247);
+    display:none;
+    z-index: 1;
+}
+
+.imooc:hover .imooc__menu{
+    display:block;
+}
+
+.imooc__menu__list{
+    padding: 5px 10px;
+}
+
+.imooc__menu__list li{
+    width: 130px;
+    font-size:13px;
+    line-height: 28px;
+    text-align: left;
+    color:rgb(119, 119, 119);
+    padding-left: 10px;
+    border-bottom: 1.5px dotted rgb(251,116,3);
+}
+
+.imooc__menu__list li:last-child{
+    border:none;
+}
+
+.imooc__menu__list li a:hover{
+    color:rgb(251,116,3);
+}
+
+.phone{
+    padding-left:40px;
+    cursor: pointer;
+}
+
+.phone:hover a{
+    color:rgb(251,116,3);
+}
+
+.phonePic{
+    width:20px;
+    vertical-align: sub;
+}
+
+/* ----------------------------------------------------------------------------导航区域结束 */
+
+
+.main__wrap{
+    width:1250px;
+    height:800px;
+    margin:0 auto;
+}
+
+.location{
+    height:60px;
+    line-height:60px;
+    font-size:20px;
+}
+
+.location span a{
+    font-size:18px;
+    color:rgb(119, 119, 119);
+}
+
+.location span a:hover{
+    color:rgb(251,116,3);
+}
+
+.account{
+    background:rgb(247, 247, 247);
+    border-radius:15px;
+    border-left:0.5px solid rgb(251,116,3);
+    border-right:0.5px solid rgb(251,116,3);
+    border-bottom:0.5px solid rgb(251,116,3);
+    overflow:hidden;
+}
+
+.account__title{
+    width:100%;
+    height:45px;
+    line-height:45px;
+    font-size:18px;
+    letter-spacing: 5px;;
+    color:white;
+    text-indent:20px;
+    background-color:rgb(251,116,3);
+}
+
+/* ----------------------------START--------------------------------------表单验证区域开始 */
+
+.account__item{
+    width:650px;
+    margin:30px auto;
+    position:relative;
+}
+
+.account__item input,
+.account__item select{
+    width:250px;
+    height:30px;
+    font-size:13px;
+    text-indent: 5px;
+    border-radius: 5px;
+    outline:none;
+    border:0.5px solid rgb(119, 119, 119);
+    position:absolute;
+    top:50%;
+    margin-top:-15px;
+    left:100px;
+    transition:box-shadow 0.5s;
+}
+
+.account__item input:focus{
+    box-shadow: 0px 0px 5px rgba(251,116,3,0.3) , 0px 0px 5px rgba(251,116,3,0.3);
+}
+
+.account__item span{
+    color:red;
+}
+
+.account__item label{
+    display: inline-block;
+    text-align-last: justify;
+    width:70px;
+    cursor: pointer;
+}
+
+.account__item .itemTip{
+    width:350px;
+    height:30px;
+    font-size:13px;
+    text-indent: 5px;
+    line-height: 30px;
+    position:absolute;
+    top:50%;
+    margin-top:-15px;
+    left:360px;
+    color:rgb(251,116,3);
+}
+
+.account__item .itemTip_pwd{
+    margin-top:-24px;
+}
+
+.account__item .degree{
+    position:absolute;
+    top:50%;
+    margin-top:-4px;
+    left:360px;
+}
+
+.account__item .easy,
+.account__item .middle,
+.account__item .hard{
+    display: inline-block;
+    width:42px;
+    height:8px;
+}
+
+.account__item .easy{
+    background-color: red;
+}
+.account__item .middle{
+    background-color: gray;
+}
+.account__item .hard{
+    background-color: gray;
+}
+
+
+.account__item .nameRule{
+    text-decoration: underline;
+}
+
+.account__item .itemTip:hover+.ruleInfo{
+    display: block;
+}
+
+.account__item .ruleInfo{
+    width:420px;
+    height:200px;
+    padding:10px;
+    font-size:12px;
+    line-height: 1.8rem;
+    color:rgb(36,135,201);
+    font-weight:bold;
+    border:1px solid rgb(36,135,201);
+    border-radius: 8px;
+    background-color: white;
+    position:absolute;
+    top:50%;
+    margin-top:5px;
+    left:450px;
+    z-index: 1;
+    display: none;
+}
+
+.account__agreement{
+    width:650px;
+    height:30px;
+    margin:0 auto;
+    text-align:center;
+    line-height: 30px;
+}
+
+.account__agreement span{
+    color:#5374bd;
+}
+
+.account__next{
+    width:250px;
+    height:40px;
+    margin:30px 500px;
+    border:none;
+    border-radius: 10px;
+    background-color: rgb(251,116,3);
+    color:white;
+    font-size:18px;
+    font-weight:bold;
+    letter-spacing: 5px;
+    text-align:center;
+    line-height: 40px;
+    cursor:pointer;
+}
+
+.account__next:hover{
+    opacity: 0.9;
+}
+
+/* ----------------------------------------------------------------------------主体区域结束 */
+
+footer{
+    height:110px;
+    font-size:14px;
+    letter-spacing: 1px;
+    text-align: center;
+    line-height: 50px;
+    color:rgb(102,102,102);
+    background-color: rgb(239, 239, 239);
+    border-top:2px solid rgb(36,135,201);
+}
+/* ----------------------------------------------------------------------------底部区域结束 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .header__nav{
+    height:110px;
+    position:absolute;
+    top:50%;
+    margin-top:-55px;
+    right:0;
+}
+
+.header__nav-list{
+    height:110px;
+    line-height:110px;
+}
+
+.header__nav-list__item{
+    float:left;
+    padding:0 10px;
+    letter-spacing:1px;
+}
+
+.header__nav-list__item_orange{
+    color:rgb(251,116,3);
+}
+
+.header__nav-list__imooc{
+    position:relative;
+}
+
+.header__nav-list__imooc__triangle{
+    width:0;
+    height:0;
+    border-left:10px solid transparent;
+    border-right:10px solid transparent;
+    border-top:10px solid rgb(251,116,3);
+    position:absolute;
+    top:45%;
+    right:-15px;
+    cursor:pointer;
+}
+
+
+.header__nav-list__imooc__menu{
+    width:163px;
+    height:320px;
+    position:absolute;
+    left:0;
+    top:70px;
+    border:1.5px solid rgb(251,116,3);
+    background-color: rgb(247, 247, 247);
+    overflow:hidden;
+    display: none;
+}
+
+.header__nav-list__imooc:hover .header__nav-list__imooc__menu{
+    display:block;
+}
+
+.header__nav-list__imooc__menu a:hover{
+    color:rgb(251,116,3);
+}
+
+.header__nav-list__imooc__menu__list{
+    font-size:13px;
+    color:rgb(119, 119, 119);
+    text-align:center;
+    padding: 0 10px;
+    overflow:hidden;
+}
+
+.header__nav-list__imooc__menu__list__item{
+    width: 130px;
+    line-height: 28px;
+    text-align: left;
+    padding-left: 10px;
+    border-bottom: 1.5px dotted rgb(251,116,3);
+}
+
+
+.header__nav-list__phone{
+    padding-left:50px;
+}
+
+.header__nav-list__phone__pic{
+    width:20px;
+    vertical-align:middle;
+} */
+
+
+
